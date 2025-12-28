@@ -15,9 +15,9 @@ import {
 } from "./agents"
 import { ORCHESTRATION_PROMPT } from "./orchestration/prompt"
 
-export const AyushOpenCodePlugin: Plugin = async (ctx) => {
+const AyushOpenCodePlugin: Plugin = async (ctx) => {
   return {
-    async config(config) {
+    config: async (config) => {
       // Initialize agent config if not present
       config.agent = config.agent ?? {}
 
@@ -45,16 +45,9 @@ export const AyushOpenCodePlugin: Plugin = async (ctx) => {
 // Default export for OpenCode plugin system
 export default AyushOpenCodePlugin
 
-// Named exports for advanced usage
-export {
-  explorerAgent,
-  librarianAgent,
-  oracleAgent,
-  uiPlannerAgent,
-} from "./agents"
-
-export { ORCHESTRATION_PROMPT } from "./orchestration/prompt"
-
+// NOTE: Do NOT export functions from main index.ts!
+// OpenCode treats ALL exports as plugin instances and calls them.
+// Only export types for external usage.
 export type {
   BuiltinAgentName,
   AgentOverrideConfig,
