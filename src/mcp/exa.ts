@@ -19,5 +19,4 @@ export const exa: LocalMcpServerConfig = {
     "https://mcp.exa.ai/mcp?tools=web_search_exa,get_code_context_exa,crawling_exa",
   ],
   enabled: true,
-  timeout: 10000,
 }

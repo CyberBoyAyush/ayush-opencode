@@ -15,5 +15,4 @@ export const sequentialThinking: LocalMcpServerConfig = {
   type: "local",
   command: ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
   enabled: true,
-  timeout: 10000,
 }

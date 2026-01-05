@@ -18,7 +18,6 @@ export interface LocalMcpServerConfig {
   type: "local"
   command: string[]
   enabled: boolean
-  timeout?: number
 }
 
 /**
@@ -28,7 +27,6 @@ export interface RemoteMcpServerConfig {
   type: "remote"
   url: string
   enabled: boolean
-  timeout?: number
 }
 
 /**
