@@ -15,7 +15,7 @@ Just add to your `opencode.json` — OpenCode will auto-install the plugin:
 
 ```json
 {
-  "plugin": ["ayush-opencode@0.2.0"]
+  "plugin": ["ayush-opencode@0.2.2"]
 }
 ```
 
@@ -29,7 +29,7 @@ That's it! Restart OpenCode and the plugin is ready to use.
 
 ```json
 {
-  "plugin": ["ayush-opencode@0.2.0"]
+  "plugin": ["ayush-opencode@0.2.2"]
 }
 ```
 
@@ -41,7 +41,7 @@ Simply change the version in your config and restart OpenCode:
 
 ```jsonc
 // Change from:
-"plugin": ["ayush-opencode@0.2.0"]
+"plugin": ["ayush-opencode@0.2.2"]
 
 // To:
 "plugin": ["ayush-opencode@0.3.0"]
